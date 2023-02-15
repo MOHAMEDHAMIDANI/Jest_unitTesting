@@ -1,0 +1,23 @@
+{
+  "name": "jest_testing",
+  "version": "1.0.0",
+  "description": "for unit testing ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.4.2"
+  },
+  "jest":{
+    "collectCoverage":true,
+    "coverageReports":[
+      "html"
+    ],
+    "coverageDirectory":"reports",
+    "collectCoverageFrom":["**/*.{js,ts,jsx}"],
+    "coveragePathIgnorePatterns":["/node_modules/","/build/"]
+  }
+}
